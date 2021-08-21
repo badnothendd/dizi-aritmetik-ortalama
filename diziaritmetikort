@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, char *argv[]) {
+	
+	float toplam=0.0;
+	float sayilar[5];
+	int i;
+	for (i=0; i<5; i++) {
+		printf("bir sayi gir lao:");
+		scanf("%f", &sayilar[i]);
+	}
+	
+		for (i=0; i<5; i++) {
+	toplam+= sayilar[i];
+	}
+	
+		printf("girdigin sayilarin aritmetik ortalamasi %.2f dir loo:", toplam/5);
+	
+	
+	return 0;
+}
